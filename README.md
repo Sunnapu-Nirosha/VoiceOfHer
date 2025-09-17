@@ -5,23 +5,27 @@ A comprehensive web application designed to empower women by providing essential
 ## Features
 
 ### 🔐 User Authentication
+
 - Secure user registration and login using Aadhar number
 - JWT-based authentication system
 - Password hashing with bcrypt
 - User profile management
 
 ### 🚨 SOS Emergency System
+
 - One-click SOS alert with GPS location
 - Automatic notification to emergency contacts
 - Real-time alert tracking and status updates
 - Emergency contact management
 
 ### 👥 Emergency Contacts
+
 - Add, edit, and delete emergency contacts
 - Contact relationship tracking
 - Quick access to emergency numbers
 
 ### 📱 User Profile Management
+
 - Update personal information
 - Manage emergency contacts
 - View SOS alert history
@@ -29,6 +33,7 @@ A comprehensive web application designed to empower women by providing essential
 ## Technology Stack
 
 ### Backend
+
 - **Node.js** - Runtime environment
 - **Express.js** - Web framework
 - **MongoDB** - Database
@@ -40,6 +45,7 @@ A comprehensive web application designed to empower women by providing essential
 - **cors** - Cross-origin resource sharing
 
 ### Frontend
+
 - **HTML5** - Structure
 - **CSS3** - Styling with modern gradients and animations
 - **JavaScript (ES6+)** - Client-side functionality
@@ -74,22 +80,26 @@ voiceofher/
 ## Installation & Setup
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - MongoDB (v4.4 or higher)
 - npm or yarn
 
 ### Step 1: Clone the Repository
+
 ```bash
 git clone <repository-url>
 cd voiceofher
 ```
 
 ### Step 2: Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### Step 3: Set Up Environment Variables
+
 Create a `.env` file in the root directory:
 
 ```env
@@ -105,6 +115,7 @@ NODE_ENV=development
 ```
 
 ### Step 4: Start MongoDB
+
 Make sure MongoDB is running on your system:
 
 ```bash
@@ -116,6 +127,7 @@ sudo systemctl start mongod
 ```
 
 ### Step 5: Start the Backend Server
+
 ```bash
 # Development mode with auto-restart
 npm run dev
@@ -127,6 +139,7 @@ npm start
 The backend server will start on `http://localhost:3000`
 
 ### Step 6: Serve the Frontend
+
 You can serve the frontend files using any static file server:
 
 ```bash
@@ -145,6 +158,7 @@ The frontend will be available at `http://localhost:5500`
 ## API Endpoints
 
 ### Authentication
+
 - `POST /api/auth/register` - Register new user
 - `POST /api/auth/login` - User login
 - `GET /api/auth/profile` - Get user profile
@@ -152,6 +166,7 @@ The frontend will be available at `http://localhost:5500`
 - `PUT /api/auth/change-password` - Change password
 
 ### SOS Alerts
+
 - `POST /api/sos/create` - Create SOS alert
 - `GET /api/sos/active` - Get active alerts
 - `GET /api/sos/my-alerts` - Get user's alerts
@@ -160,6 +175,7 @@ The frontend will be available at `http://localhost:5500`
 - `POST /api/sos/:alertId/notify-contacts` - Notify emergency contacts
 
 ### User Management
+
 - `GET /api/users/` - Get all users (limited info)
 - `GET /api/users/:userId` - Get specific user
 - `GET /api/users/emergency-contacts` - Get user's emergency contacts
@@ -170,6 +186,7 @@ The frontend will be available at `http://localhost:5500`
 ## Usage Guide
 
 ### 1. User Registration
+
 1. Navigate to the registration page
 2. Enter your Aadhar number (12 digits)
 3. Create a strong password (minimum 6 characters)
@@ -178,12 +195,14 @@ The frontend will be available at `http://localhost:5500`
 6. Click "Register"
 
 ### 2. User Login
+
 1. Go to the login page
 2. Enter your Aadhar number and password
 3. Click "Login"
 4. You'll be redirected to the main page
 
 ### 3. Setting Up Emergency Contacts
+
 1. Click on "Profile" or navigate to the profile page
 2. In the "Emergency Contacts" section, click "Add Emergency Contact"
 3. Fill in the contact's name, phone number, and relationship
@@ -191,6 +210,7 @@ The frontend will be available at `http://localhost:5500`
 5. Repeat for additional contacts
 
 ### 4. Using SOS Alert
+
 1. Navigate to the SOS page
 2. Ensure location access is granted
 3. Click the large SOS button
@@ -201,6 +221,7 @@ The frontend will be available at `http://localhost:5500`
    - Display success confirmation
 
 ### 5. Managing Profile
+
 1. Go to the profile page
 2. Update your personal information
 3. Manage your emergency contacts
@@ -218,6 +239,7 @@ The frontend will be available at `http://localhost:5500`
 ## Database Schema
 
 ### User Model
+
 ```javascript
 {
   aadhar: String (12 digits, unique),
@@ -243,6 +265,7 @@ The frontend will be available at `http://localhost:5500`
 ```
 
 ### SOS Alert Model
+
 ```javascript
 {
   userId: ObjectId (ref: User),
@@ -299,8 +322,9 @@ The frontend will be available at `http://localhost:5500`
 ## Support
 
 For support and questions, please contact:
-- Email: majjineeraja8121@gmail.com
-- Phone: +91-8977462100
+
+- Email: niroshasunnapu062@gmail.com
+- Phone: +91-7675041924
 
 ## License
 
@@ -314,4 +338,4 @@ This project is licensed under the MIT License.
 
 ---
 
-**Note**: This is a development version. For production deployment, ensure proper security measures, SSL certificates, and environment-specific configurations. 
+**Note**: This is a development version. For production deployment, ensure proper security measures, SSL certificates, and environment-specific configurations.
